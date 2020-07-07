@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
 class DataSearch extends SearchDelegate<String>{
 final languages = [
   "Python",
-  "HTML",
+"HTML",
   "Java",
   "Javascript",
   "C",
@@ -238,7 +238,20 @@ class PythonRoute extends StatelessWidget{
      return Scaffold(
        appBar: AppBar(
          title: Text("Python "),
-       
+       ),
+
+       body: ListView(
+         children: <Widget>[
+           ListTile(
+             
+             title: Text("Comment",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text('# this is how you comment \nSubtitle line 3',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+         ],
        ),
      );
 }
