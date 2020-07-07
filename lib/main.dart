@@ -242,12 +242,39 @@ class PythonRoute extends StatelessWidget{
 
        body: ListView(
          children: <Widget>[
+            ListTile(
+             title: Text("Print",
+             style: TextStyle(color: Colors.green),
+             ),
+             subtitle: Text("print(Insert your message in double quotations here)",
+             style: TextStyle(color: Colors.green),
+             ),
+
+           ),
            ListTile(
              
              title: Text("Comment",
              style: TextStyle(color: Colors.green),
              ),
               subtitle: Text('# this is how you comment \nSubtitle line 3',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+            ListTile(
+             
+             title: Text("Variables",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text("variable x = value;",
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+            ListTile(
+             
+             title: Text("Numbers",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text('variable x = value (int); variable y = value2(float)',
               style: TextStyle(color: Colors.green),
               ),
            ),
