@@ -278,6 +278,99 @@ class PythonRoute extends StatelessWidget{
               style: TextStyle(color: Colors.green),
               ),
            ),
+           ListTile(
+             
+             title: Text("Convert into to float",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text('float(x)',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+           ListTile(
+             
+             title: Text("Strings",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text(
+                'Get characters at a certain position: A= "Hello World!"; print(a[1])',
+                'Slicing: B = “Hello World”; print(b[2:5])',
+                'Length: A = “Hello World”; print(len(a))',
+                'Lower: A = “Hello World”; print(a.lower())',
+                'Upper: A = “Hello World”; print(a.upper())',
+                'Replace: A = “Hello World”; print(a.replace(“H”, “J”))',
+                'Split: A = “Hello, World”; print(a.split(“,”))',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+           ListTile(
+             
+             title: Text("String Concatenation",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text(
+              'To concatenate, or combine, two strings: a = "Hello",b = "World", c = a + b; print(c), HelloWorld',
+              'Insert numbers into strings: age = 36, txt = "My name is John, and I am {}"; print(txt.format(age)), Result = My name is John, and I am 36 ',
+              '',
+              '',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+           ListTile(
+             
+             title: Text("Boolean Values",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text('print(bool("Hello")); print(bool(15))',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+           ListTile(
+             
+             title: Text("Operators",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text(
+                'Addition: "+"; x + y',
+                'Subtraction: "-"; x - y',
+                'Multiplication: "*"; x * y',
+                'Division: "/"; x / y',
+                'Modulus: "%", x % y',
+                'Exponentiation: "**"; x ** y',
+                'Floor Division: "//"; x // y',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+           ListTile(
+             
+             title: Text("Comparison Operators",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text(
+                'Equal: "=="; x == y',
+                'Not Equal: "!="; x != y',
+                'Greater Than: ">"; x > y',
+                'Less Than: "<"; x < y',
+                'Greater than or equal to: ">="; x >= y',
+                'Less than or equal to: "<="; x < = y',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+           ListTile(
+             
+             title: Text("Logical Operators",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text(
+                '',
+                '',
+                '',
+                '',
+                '',
+                '',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
          ],
        ),
      );
