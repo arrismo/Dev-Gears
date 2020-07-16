@@ -256,7 +256,7 @@ class PythonRoute extends StatelessWidget{
              title: Text("Comment",
              style: TextStyle(color: Colors.green),
              ),
-              subtitle: Text('# this is how you comment \nSubtitle line 3',
+              subtitle: Text('# this is how you comment',
               style: TextStyle(color: Colors.green),
               ),
            ),
@@ -362,12 +362,89 @@ class PythonRoute extends StatelessWidget{
              style: TextStyle(color: Colors.green),
              ),
               subtitle: Text(
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
+                'And: Returns True if both statements are true; x < 5 and x < 10 ',
+                'Or: Returns true if one of the statements is true; x < 5 or x < 4',
+                'Not: Reverse the result, returns false if the result is true; not(x < 5 and x < 10)',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+           ListTile(
+             
+             title: Text("Print List",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text(
+                'Thislist = [“apple”,”banana”,”cherry”]; print(this list)',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+           ListTile(
+             
+             title: Text("Access List Items",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text(
+                'Thislist = [“apple”,”banana”,”cherry”]; print(this list[1])',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+           ListTile(
+             
+             title: Text("Negative Indexing",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text(
+                'Negative indexing means beginning from the end: Thislist = [“apple”,”banana”,”cherry”]; print(this list[-1])',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+           ListTile(
+             
+             title: Text("Range of Indexes",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text(
+                'thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]: print(thislist[2:5]); banana, cherry, orange, kiwi, melon',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+           ListTile(
+             
+             title: Text("Change Item Value",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text(
+                'thislist = ["apple", "banana", "cherry"]; thislist[1] = "blackcurrant"; print(thislist); blackcurrant, banana, cherry',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+           ListTile(
+             
+             title: Text("List Length",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text(
+                'thislist = ["apple", "banana", "cherry"]; print(len(thislist)); Equals 3',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+           ListTile(
+             
+             title: Text("Add to List",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text(
+                'thislist = ["apple", "banana", "cherry"]; thislist.append("orange"); print(thislist); apple, banana, cherry, orange',
+              style: TextStyle(color: Colors.green),
+              ),
+           ),
+           ListTile(
+             
+             title: Text("Insert item to List",
+             style: TextStyle(color: Colors.green),
+             ),
+              subtitle: Text(
+                'thislist = ["apple", "banana", "cherry"]; thislist.insert(1, "orange"); print(thislist); orange, apple, banana, cherry',
               style: TextStyle(color: Colors.green),
               ),
            ),
