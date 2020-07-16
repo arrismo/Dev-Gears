@@ -289,82 +289,10 @@ class PythonRoute extends StatelessWidget{
            ),
            ListTile(
              
-             title: Text("Strings",
-             style: TextStyle(color: Colors.green),
-             ),
-              subtitle: Text(
-                'Get characters at a certain position: A= "Hello World!"; print(a[1])',
-                'Slicing: B = “Hello World”; print(b[2:5])',
-                'Length: A = “Hello World”; print(len(a))',
-                'Lower: A = “Hello World”; print(a.lower())',
-                'Upper: A = “Hello World”; print(a.upper())',
-                'Replace: A = “Hello World”; print(a.replace(“H”, “J”))',
-                'Split: A = “Hello, World”; print(a.split(“,”))',
-              style: TextStyle(color: Colors.green),
-              ),
-           ),
-           ListTile(
-             
-             title: Text("String Concatenation",
-             style: TextStyle(color: Colors.green),
-             ),
-              subtitle: Text(
-              'To concatenate, or combine, two strings: a = "Hello",b = "World", c = a + b; print(c), HelloWorld',
-              'Insert numbers into strings: age = 36, txt = "My name is John, and I am {}"; print(txt.format(age)), Result = My name is John, and I am 36 ',
-              '',
-              '',
-              style: TextStyle(color: Colors.green),
-              ),
-           ),
-           ListTile(
-             
              title: Text("Boolean Values",
              style: TextStyle(color: Colors.green),
              ),
               subtitle: Text('print(bool("Hello")); print(bool(15))',
-              style: TextStyle(color: Colors.green),
-              ),
-           ),
-           ListTile(
-             
-             title: Text("Operators",
-             style: TextStyle(color: Colors.green),
-             ),
-              subtitle: Text(
-                'Addition: "+"; x + y',
-                'Subtraction: "-"; x - y',
-                'Multiplication: "*"; x * y',
-                'Division: "/"; x / y',
-                'Modulus: "%", x % y',
-                'Exponentiation: "**"; x ** y',
-                'Floor Division: "//"; x // y',
-              style: TextStyle(color: Colors.green),
-              ),
-           ),
-           ListTile(
-             
-             title: Text("Comparison Operators",
-             style: TextStyle(color: Colors.green),
-             ),
-              subtitle: Text(
-                'Equal: "=="; x == y',
-                'Not Equal: "!="; x != y',
-                'Greater Than: ">"; x > y',
-                'Less Than: "<"; x < y',
-                'Greater than or equal to: ">="; x >= y',
-                'Less than or equal to: "<="; x < = y',
-              style: TextStyle(color: Colors.green),
-              ),
-           ),
-           ListTile(
-             
-             title: Text("Logical Operators",
-             style: TextStyle(color: Colors.green),
-             ),
-              subtitle: Text(
-                'And: Returns True if both statements are true; x < 5 and x < 10 ',
-                'Or: Returns true if one of the statements is true; x < 5 or x < 4',
-                'Not: Reverse the result, returns false if the result is true; not(x < 5 and x < 10)',
               style: TextStyle(color: Colors.green),
               ),
            ),
@@ -464,7 +392,47 @@ class HTMlRoute extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
         title: Text("HTML"),
-      )
+      ),
+      body: ListView(
+        children: <Widget>[
+          ListTile(
+            title: Text("Header Tag",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("<h(1-6)>; size in descending order from 1-6")
+          ),
+          ListTile(
+            title: Text("Paragraph Tag",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("<p> will create a paragraph on the document")
+          ),
+          ListTile(
+            title: Text("Div Tag",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("<div> will create a container for all paragraphs or header tags, letting you organize work")
+          ),
+           ListTile(
+            title: Text("Formatting Text",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("<b> for bold text; <strong> for important text; <i> for italic text; <em> for emphasized text; <small> for smaller text; <del> for deleted text; <ins> for inserted text; <Sub> for subscript text; <sup> for superscript text")
+          ),
+           ListTile(
+            title: Text("Comment tags",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("<!-- Insert Tage Here -->")
+          ),
+          ListTile(
+            title: Text("Block and Inline",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("a <div> tag is a block element that will create a new line; a <span> tag will only take up as much space as it needs on a pre-existing line")
+          ),
+        ],
+      ),
     );
   }
 }
