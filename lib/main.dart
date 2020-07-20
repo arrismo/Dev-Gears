@@ -448,7 +448,47 @@ class JavascriptRoute extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
         title: Text("Javascript"),
-      )
+      ),
+      body: ListView(
+        children: <Widget>[
+          ListTile(
+            title: Text("OnClick Funtion",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("<button onclick = 'X command'>X label</button>")
+          ),
+          ListTile(
+            title: Text("Changing a HTML image",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("using the onclick command, you can input onclick = 'document.getElementbyId('myImage').src = 'newSource'")
+          ),
+          ListTile(
+            title: Text("Hide an HTML element",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("document.getElementById('demo').style.display= 'none'")
+          ),
+          ListTile(
+            title: Text("Changing the Display Style of an HTML element",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("document.getElementById('demo').style.display = 'block' or 'inline'")
+          ),
+          ListTile(
+            title: Text("Functions",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("A Javascript function is a block of code that can perform tasks. Ex: function myFunction(x,y){return x*y;}; return(myFunction(4,3)/ this will print the number 12)")
+          ),
+          ListTile(
+            title: Text("Window.alert",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("To send an alert to the user and/or player, you can input either window.alert(X number, phrase, or boolean), or you can type the same phrase without the window keyword")
+          ),
+        ],
+      ),
     );
   }
 }
@@ -462,9 +502,50 @@ class JavaRoute extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
         title: Text("Java"),
-      )
+      ),
+      body: ListView(
+        children: <Widget>[
+          ListTile(
+            title: Text("Print a message",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("public class (file name){public static void main(String[] arg){System.out.println(phrase here);}}")
+          ),
+          ListTile(
+            title: Text("The Main Method",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("Any code inside the main() method will be excecuted: public static void main(String[] args){insert code}")
+          ),
+          ListTile(
+            title: Text("Variables",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("String: Stores Text; int: stores integers; float: floating numbers with decimals; char: stores single characters ie 'a' or 'B'; boolean: stores values that are either true or false")
+          ),
+          ListTile(
+            title: Text("Operators",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("Addition: '+'; Subtraction: '-'; Multiplication: '*'; Division: '/'; Modulus: '%' Returns the division remainder; Increment: '++' Increases the value of a variable by 1; Decrement: '--' Decreases the value of a variable by 1")
+          ),
+          ListTile(
+            title: Text("Locate where an element of a String",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("System.out.println(tx.stringName(soughtOutElement); this will count the amount of characters before the start of the element, counting numbers and letters, spaces are not included")
+          ),
+          ListTile(
+            title: Text("Math.max",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("Using Math.max, you can identify the highest value between x and y: Math.man(5,10) returns 10")
+          ),
+        ],
+      ),
     );
   }
+    
 }
 
 class CRoute extends StatelessWidget{
