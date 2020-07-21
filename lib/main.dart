@@ -551,11 +551,51 @@ class JavaRoute extends StatelessWidget{
 class CRoute extends StatelessWidget{
   @override
 
-  Widget build(BuildContext context) {
+ Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("C"),
-      )
+      ),
+      body: ListView(
+        children: <Widget>[
+          ListTile(
+            title: Text("Variable Keywords",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("Int x= integer; float x = number either negative or with decimal; char x = character")
+          ),
+           ListTile(
+            title: Text("Types of Variables",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("Local: Variable defined and only accessable in function or block (use int x = value inside a function); GLobal: A variable outside of a function or block and can be accessed by any function(use int x = value outside a function); Static: Retains it's value in multiple calls, must use the static keyword(static int x = value inside a function); Automatic variable: a variable declared inside a function or block and uses the auto keyword(auto in x = value in a function); External Variable: global-like variable that uses external keyword(extern int x = value outside of a function)")
+          ),
+          ListTile(
+            title: Text("Functions",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("void functionName() is used to hold the code, whereas the main() function is for the excecution of code")
+          ),
+          ListTile(
+            title: Text("Output",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("Calling the printf() function is the main function to return a string in quotations ie ('This is a test')")
+          ),
+          ListTile(
+            title: Text("User Input Integer",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("int testInteger; printf('Enter an integer: '); scanf('%d', &testInteger); printf('Number= %d, testInteger'); return 0;// This code will ask the user to input an integer and returns: Enter an integer: (enteredInteger) Number = (enteredInteger)")
+          ),
+          ListTile(
+            title: Text("Operators",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("Addition: '+'; Subtraction: '-'; Multiplication: '*'; Division: '/'; Modulo: '%'")
+          ),
+        ],
+      ),
     );
   }
 }
