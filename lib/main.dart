@@ -606,8 +606,42 @@ class CPlusRoute extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("C++"),
-      )
+        title: Text("CPlus"),
+      ),
+      body: ListView(
+        children: <Widget>[
+          ListTile(
+            title: Text("Print Text to Screen",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("#include <iostream>; int main(){ std::cout << 'Hello World!';}")
+          ),
+          ListTile(
+            title: Text("Comments",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("Use '//' to place a comment in the code")
+          ),
+          ListTile(
+            title: Text("Defining a variable",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("When defining a variable, one can either do int x = value, int x(value), or do int x {value}")
+          ),
+          ListTile(
+            title: Text("Operators",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("Addition: +; Subtraction: -; Multiplication: *; Division: /; Modulo: /")
+          ),
+          ListTile(
+            title: Text("Output and Input",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("cout<< 'This is a seentence'; will print 'This is a sentence'// To do input: int variable; cin>> variable; this allows the user to input the variable value/")
+          ),
+        ],
+      ),
     );
   }
 }
@@ -615,11 +649,21 @@ class CPlusRoute extends StatelessWidget{
 class CSharpRoute extends StatelessWidget{
   @override
 
-  Widget build(BuildContext context) {
+ Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("C#"),
-      )
+        title: Text("CSharp"),
+      ),
+      body: ListView(
+        children: <Widget>[
+          ListTile(
+            title: Text("Print Text to Screen",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("using System; namespace HelloWorld { class Program{ static void Main(string[] args){ Console.WriteLine('Hello World!');}}}")
+          ),
+        ],
+      ),
     );
   }
 }
