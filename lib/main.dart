@@ -662,6 +662,30 @@ class CSharpRoute extends StatelessWidget{
             ),
             subtitle: Text("using System; namespace HelloWorld { class Program{ static void Main(string[] args){ Console.WriteLine('Hello World!');}}}")
           ),
+          ListTile(
+            title: Text("Comments",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("//for single line comments; /*for multi line comments */")
+          ),
+          ListTile(
+            title: Text("Operators",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("+ is addition; - is subtraction; * is multiplication; / is division; % is modulus; ++ is increase by one; -- is subtract by one")
+          ),
+          ListTile(
+            title: Text("Rational Operators",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("== if the values are equal condition becomes true; != if the values aren't equal condition becomes true; > is the value on left if greater condition becomes true; < if value on left is less condition becomes true; >= if value on left is greater or equal, condition becomes true; <= if value on left is less than or equal, condition becomes true ")
+          ),
+          ListTile(
+            title: Text("Logical Operators",
+            style: TextStyle(color: Colors.green),
+            ),
+            subtitle: Text("&& is the and operator. if both statements are true then the condition becomes true; || is the or operator, if any statements are true then the condition becomes true; ! is the not operator")
+          ),
         ],
       ),
     );
